@@ -13,7 +13,7 @@
       "get" : {
         "summary" : "Example GET",
         "parameters" : [ {
-          "name" : "ise Enabled",
+          "name" : "Enabled",
           "in" : "query",
           "description" : "A boolean query parameter",
           "required" : false,
