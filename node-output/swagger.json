@@ -1,0 +1,64 @@
+{
+  "openapi" : "3.0.0",
+  "info" : {
+    "title" : "Sample API",
+    "version" : "1.0.0"
+  },
+  "servers" : [ {
+    "url" : "https://virtserver.swaggerhub.com/testing-007/testing-version/1.0.0",
+    "description" : "SwaggerHub API Auto Mocking"
+  } ],
+  "paths" : {
+    "/example" : {
+      "get" : {
+        "summary" : "Example GET",
+        "parameters" : [ {
+          "name" : "Enabled",
+          "in" : "query",
+          "description" : "A boolean query parameter",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "boolean"
+          }
+        }, {
+          "name" : "isIsible",
+          "in" : "query",
+          "description" : "Another boolean query parameter",
+          "required" : true,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "boolean"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        }
+      },
+      "post" : {
+        "summary" : "Example POST",
+        "parameters" : [ {
+          "name" : "helloHow",
+          "in" : "header",
+          "description" : "A boolean header parameter",
+          "required" : true,
+          "style" : "simple",
+          "explode" : false,
+          "schema" : {
+            "type" : "boolean"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Post success"
+          }
+        }
+      }
+    }
+  },
+  "components" : { }
+}
